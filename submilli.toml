@@ -1,0 +1,6 @@
+[[package]]
+name = "@puyol-labs/chargeafter-demo"
+version = "0.1.0"
+description = "Demo data: fictional ChargeAfter fixtures for offline agent and policy demonstrations."
+keywords = ["chargeafter", "demo", "fixtures", "financing", "payments"]
+path = "packages/chargeafter-demo"
