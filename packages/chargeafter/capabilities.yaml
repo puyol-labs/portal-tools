@@ -1,4 +1,4 @@
-namespace: submilli
+namespace: puyol-labs
 provides:
 - name: chargeafter.com/applications.offers
   description: List lender offers for an application.
