@@ -4,3 +4,10 @@ version = "0.1.0"
 description = "Demo data: fictional ChargeAfter fixtures for offline agent and policy demonstrations."
 keywords = ["chargeafter", "demo", "fixtures", "financing", "payments"]
 path = "packages/chargeafter-demo"
+
+[[package]]
+name = "@puyol-labs/chargeafter"
+version = "0.1.0"
+description = "Typed ChargeAfter merchant-financing client for application links, application status and offers, charges, funding reports, and consumer accounts."
+keywords = ["chargeafter", "financing", "payments", "merchant", "applications", "charges"]
+path = "packages/chargeafter"
