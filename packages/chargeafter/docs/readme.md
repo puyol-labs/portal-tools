@@ -2,8 +2,11 @@
 
 `@puyol-labs/chargeafter` provides typed operations for a single ChargeAfter
 merchant credential. It reads `CHARGEAFTER_PRIVATE_KEY` inside the Package and
-uses the configured sandbox or production API host. Programs cannot read the
-key or choose the host.
+sends requests to the configured API host. For now the package is sandbox-only:
+the required install-time `baseUrl` must be `https://api-sandbox.ca-dev.co`.
+`capabilities.yaml` grants HTTP only to that sandbox host, so a production
+`baseUrl` would be denied. Do not use `https://api.chargeafter.com` until
+production-host grants exist. Programs cannot read the key or choose the host.
 
 A credential represents one merchant. Some provider responses contain a store
 identifier, but the public read capabilities accept only IDs or date ranges;

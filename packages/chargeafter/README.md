@@ -4,9 +4,11 @@ Typed operations for one ChargeAfter merchant credential. The package reads
 `CHARGEAFTER_PRIVATE_KEY` internally and sends it as a Bearer token. Generated
 programs never receive the key.
 
-The install-time `baseUrl` selects the API host. Use
-`https://api-sandbox.ca-dev.co` for a sandbox merchant and
-`https://api.chargeafter.com` for production. A key is scoped to one merchant.
+For now, this package is sandbox-only. The required install-time `baseUrl`
+must be `https://api-sandbox.ca-dev.co`. `capabilities.yaml` grants HTTP only
+to that sandbox host, so a production `baseUrl` would be denied. Do not use
+`https://api.chargeafter.com` until production-host grants exist. A key is
+scoped to one merchant.
 Read capabilities accept only IDs or date ranges, so reads cannot be filtered
 by store. `storeId` is policy-visible for new application and checkout links.
 
